@@ -28,6 +28,7 @@ fetchDataButton.addEventListener("click", async () => {
   } catch (error) {
     fetchDataContainer.textContent = `Error: ${error.message}`;
   } finally {
+    //resetting to the default values
     fetchDataButton.disabled = false;
     loadingSpinner.style.display = "none";
   }
